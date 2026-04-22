@@ -1,0 +1,87 @@
+{
+  "run_key": "W72_H24",
+  "window_hours": 72,
+  "horizon_hours": 24,
+  "experiment": "weighted_thresholded",
+  "train_manifest": "section3_windows_forecast_24_fixed_section4_fe_ext_compact_TRUE\\manifests_by_group\\manifest_train_W72h_H24h.json",
+  "val_manifest": "section3_windows_forecast_24_fixed_section4_fe_ext_compact_TRUE\\manifests_by_group\\manifest_val_W72h_H24h.json",
+  "test_manifest": "section3_windows_forecast_24_fixed_section4_fe_ext_compact_TRUE\\manifests_by_group\\manifest_test_W72h_H24h.json",
+  "train_meta": {
+    "split": "train",
+    "manifest": "section3_windows_forecast_24_fixed_section4_fe_ext_compact_TRUE\\manifests_by_group\\manifest_train_W72h_H24h.json",
+    "mode": "balanced",
+    "num_samples": 120725,
+    "feature_dim": 704,
+    "class_dist": {
+      "quiet": 80000,
+      "B": 30000,
+      "C": 6923,
+      "M": 3792,
+      "X": 10
+    },
+    "caps": {
+      "quiet": 80000,
+      "B": 30000,
+      "C": 15000,
+      "M": 8000,
+      "X": 11
+    },
+    "target_total": 200000
+  },
+  "val_meta": {
+    "split": "val",
+    "manifest": "section3_windows_forecast_24_fixed_section4_fe_ext_compact_TRUE\\manifests_by_group\\manifest_val_W72h_H24h.json",
+    "mode": "full",
+    "num_samples": 130761,
+    "feature_dim": 704,
+    "class_dist": {
+      "quiet": 127917,
+      "B": 24,
+      "C": 2256,
+      "M": 532,
+      "X": 32
+    },
+    "max_samples": 0
+  },
+  "test_meta": {
+    "split": "test",
+    "manifest": "section3_windows_forecast_24_fixed_section4_fe_ext_compact_TRUE\\manifests_by_group\\manifest_test_W72h_H24h.json",
+    "mode": "full",
+    "num_samples": 813270,
+    "feature_dim": 704,
+    "class_dist": {
+      "quiet": 795227,
+      "B": 14816,
+      "C": 2264,
+      "M": 921,
+      "X": 42
+    },
+    "max_samples": 0
+  },
+  "feature_count": 704,
+  "class_count": 5,
+  "class_labels": [
+    "quiet",
+    "B",
+    "C",
+    "M",
+    "X"
+  ],
+  "label_mapping": {
+    "quiet": 0,
+    "B": 1,
+    "C": 2,
+    "M": 3,
+    "X": 4
+  },
+  "preprocessing_notes": {
+    "pooling": "Each (T,F) window is converted to a 4F embedding using mean/std/max/last pooling.",
+    "scaling": "No separate scaler artifact is used in the LightGBM pipeline.",
+    "feature_name_note": "Feature names follow the exact pooled feature order used by the model: mean_f*, std_f*, max_f*, last_f*."
+  },
+  "evaluation_split_used_for_final_reported_test_results": "full test manifest",
+  "original_run_dir": "runs_lightgbm_night\\20260411_124138\\W72_H24",
+  "model_file": "runs_lightgbm_night\\20260411_124138\\W72_H24\\lgbm_weighted_5c.txt",
+  "metrics_file": "runs_lightgbm_night\\20260411_124138\\W72_H24\\metrics_full.json",
+  "thresholds_file": "runs_lightgbm_night\\20260411_124138\\W72_H24\\thresholds_weighted_5c.json"
+}

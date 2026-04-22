@@ -1,0 +1,26 @@
+{
+  "night_root": "E:\\Data science project\\runs_lightgbm_night\\20260411_124138",
+  "notebook_root": "E:\\Data science project\\runs_lightgbm_notebook\\W24_H24",
+  "runs_in_matrix": [
+    "W24_H24",
+    "W24_H48",
+    "W24_H72",
+    "W48_H24",
+    "W48_H48",
+    "W48_H72",
+    "W72_H24",
+    "W72_H48",
+    "W72_H72"
+  ],
+  "usable_runs": [
+    "W24_H24",
+    "W24_H48",
+    "W24_H72",
+    "W48_H24",
+    "W48_H48",
+    "W48_H72",
+    "W72_H24",
+    "W72_H48",
+    "W72_H72"
+  ]
+}

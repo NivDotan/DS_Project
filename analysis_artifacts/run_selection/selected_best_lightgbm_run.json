@@ -1,0 +1,11 @@
+{
+  "run_key": "W72_H24",
+  "window_hours": 72,
+  "horizon_hours": 24,
+  "experiment": "weighted_thresholded",
+  "exact_model_file_path": "runs_lightgbm_night\\20260411_124138\\W72_H24\\lgbm_weighted_5c.txt",
+  "exact_metrics_file_path": "runs_lightgbm_night\\20260411_124138\\W72_H24\\metrics_full.json",
+  "exact_thresholds_file_path": "runs_lightgbm_night\\20260411_124138\\W72_H24\\thresholds_weighted_5c.json",
+  "reason_selected": "Selected by the Section 6 LightGBM ranking logic: among runs marked usable_for_comparison, choose the highest best 5-class test Macro-F1. The notebook explicitly states that W72_H24 is the strongest balanced 5-class LightGBM baseline.",
+  "any_caveats": []
+}

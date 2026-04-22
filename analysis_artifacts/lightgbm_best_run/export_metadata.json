@@ -1,0 +1,13 @@
+{
+  "full_test_rows_expected": 813270,
+  "manifest_stream_rows_seen": 827746,
+  "exported_test_rows": 813270,
+  "missing_test_rows": 14476,
+  "missing_test_chunks": 7,
+  "saved_metrics_pred_match_fraction": 0.7429938131733589,
+  "saved_metrics_pred_match_count": 593499,
+  "saved_metrics_pred_total_compared": 798794,
+  "saved_metrics_pred_uncompared_rows": 28952,
+  "selected_experiment": "weighted_thresholded",
+  "row_id_is_partial_with_gaps": true
+}

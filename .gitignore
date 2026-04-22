@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Large data and generated artifacts
+data/
+raw_data/
+preprocessed_partitions*/
+merged_partitions*/
+ar_buckets/
+temporal_agg_cache*/
+tmp_cache*/
+runs_*/
+stage1_only_package/
+
+# Large binary outputs
+*.parquet
+*.npz
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.zip
+
+# Local exports and temporary files
+*.docx
+*.html
+tmp_*
+draftToDelete.py
+

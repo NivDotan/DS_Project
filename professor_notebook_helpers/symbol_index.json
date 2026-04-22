@@ -1,0 +1,21 @@
+{
+  "ExperimentCfg": "sources/stage1_core_context_cell8.py",
+  "ExperimentCfgSkipStage1": "sources/stage1_core_context_cell8.py",
+  "run_stage1_only": "sources/stage1_core_context_cell8.py",
+  "Stage3ARejectCfg": "sources/B1_stage3a_bilstm_gate.py",
+  "run_stage3a_reject_only": "sources/B1_stage3a_bilstm_gate.py",
+  "run_stage3a_reject_only_transformer": "sources/B2_stage3a_transformer_gate.py",
+  "run_stage3a_reject_only_minirocket": "sources/B3_stage3a_minirocket_gate.py",
+  "Stage3BStableCfg": "sources/C1_stage3b_bilstm_stable.py",
+  "run_stage3b_stable": "sources/C1_stage3b_bilstm_stable.py",
+  "run_stage3b_stable_transformer_newfolder": "sources/B2_stage3a_transformer_gate.py",
+  "run_stage3b_stable_minirocket_newfolder": "sources/C4_stage3b_minirocket_phaseB_only.py",
+  "PhysicsInformedCfg": "sources/C3_stage3b_physics_informed_pi_severe.py",
+  "run_stage3b_physics_informed_finetune": "sources/C3_stage3b_physics_informed_pi_severe.py",
+  "cfg_tx": "sources/C3_stage3b_physics_informed_pi_severe.py",
+  "stage1_w72_notebook_block": "../stage1_w72_notebook_block.py",
+  "stage2_notebook_results": "../stage2_notebook_results.py",
+  "stage2_section_helpers": "../stage2_section_helpers.py",
+  "stage3_matrix_helpers": "../stage3_matrix_helpers.py",
+  "stage3_notebook_results": "../stage3_notebook_results.py"
+}

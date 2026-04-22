@@ -1,0 +1,74 @@
+{
+  "selected_best_run": {
+    "run_key": "W72_H24",
+    "window_hours": 72,
+    "horizon_hours": 24,
+    "experiment": "weighted_thresholded",
+    "exact_model_file_path": "runs_lightgbm_night\\20260411_124138\\W72_H24\\lgbm_weighted_5c.txt",
+    "exact_metrics_file_path": "runs_lightgbm_night\\20260411_124138\\W72_H24\\metrics_full.json",
+    "exact_thresholds_file_path": "runs_lightgbm_night\\20260411_124138\\W72_H24\\thresholds_weighted_5c.json",
+    "reason_selected": "Selected by the Section 6 LightGBM ranking logic: among runs marked usable_for_comparison, choose the highest best 5-class test Macro-F1. The notebook explicitly states that W72_H24 is the strongest balanced 5-class LightGBM baseline.",
+    "any_caveats": []
+  },
+  "package_status": {
+    "run_selection_complete": true,
+    "base_lightgbm_artifacts_complete": true,
+    "overlap_artifacts_complete": true,
+    "shap_artifacts_complete": true,
+    "validation_complete": true
+  },
+  "notes": [
+    "The selected experiment is weighted_thresholded, which uses lgbm_weighted_5c.txt plus thresholds_weighted_5c.json.",
+    "One test NPZ shard is currently unreadable, so row-level exports are reconstructed for all readable rows and preserve original global row_id positions with gaps for missing rows.",
+    "classification_report_test.csv comes from the saved full-run metrics; confusion_matrix_test.csv reflects the reconstructed readable subset only.",
+    "SHAP-compatible values are computed later with LightGBM pred_contrib on a balanced analysis subset, not on the full 813270-row test set, to keep artifact size practical."
+  ],
+  "export_metadata": {
+    "full_test_rows_expected": 813270,
+    "manifest_stream_rows_seen": 827746,
+    "exported_test_rows": 813270,
+    "missing_test_rows": 14476,
+    "missing_test_chunks": 7,
+    "saved_metrics_pred_match_fraction": 0.7429938131733589,
+    "saved_metrics_pred_match_count": 593499,
+    "saved_metrics_pred_total_compared": 798794,
+    "saved_metrics_pred_uncompared_rows": 28952,
+    "selected_experiment": "weighted_thresholded",
+    "row_id_is_partial_with_gaps": true
+  },
+  "validation": {
+    "x_test_rows": 813270,
+    "y_test_rows": 813270,
+    "prediction_rows": 813270,
+    "probability_rows": 813270,
+    "missing_row_manifest_rows": 14476,
+    "feature_count_from_schema": 704,
+    "feature_count_from_feature_names_json": 704,
+    "label_mapping_matches_expected": true,
+    "row_count_match_base_exports": true,
+    "subset_rows": 36086,
+    "pca_rows": 36086,
+    "tsne_rows": 36086,
+    "subset_rows_match_ready_files": true,
+    "subset_row_ids_are_subset_of_y_test": true,
+    "shap_ready_rows": 36086,
+    "shap_full_rows": 36086,
+    "shap_B_rows": 14816,
+    "shap_C_rows": 2264,
+    "shap_ready_matches_full": true,
+    "export_metadata": {
+      "full_test_rows_expected": 813270,
+      "manifest_stream_rows_seen": 827746,
+      "exported_test_rows": 813270,
+      "missing_test_rows": 14476,
+      "missing_test_chunks": 7,
+      "saved_metrics_pred_match_fraction": 0.7429938131733589,
+      "saved_metrics_pred_match_count": 593499,
+      "saved_metrics_pred_total_compared": 798794,
+      "saved_metrics_pred_uncompared_rows": 28952,
+      "selected_experiment": "weighted_thresholded",
+      "row_id_is_partial_with_gaps": true
+    },
+    "missing_expected_files": []
+  }
+}

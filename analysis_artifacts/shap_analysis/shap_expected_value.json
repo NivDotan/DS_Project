@@ -1,0 +1,24 @@
+{
+  "class_names": [
+    "quiet",
+    "B",
+    "C",
+    "M",
+    "X"
+  ],
+  "expected_value_by_class": {
+    "quiet": -0.2942277491092682,
+    "B": -1.9792507886886597,
+    "C": -3.3433499336242676,
+    "M": -2.7582969665527344,
+    "X": -4.119724750518799
+  },
+  "max_rowwise_drift_by_class": {
+    "quiet": 3.8117170333862305e-05,
+    "B": 0.0006808042526245117,
+    "C": 0.0006737709045410156,
+    "M": 0.0006132125854492188,
+    "X": 0.0003972053527832031
+  },
+  "source_note": "Expected values are derived from LightGBM pred_contrib output on the exported SHAP subset."
+}

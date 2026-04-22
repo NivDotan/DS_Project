@@ -1,0 +1,25 @@
+{
+  "sampling_logic": {
+    "quiet": "random sample with seed=42, capped at total non-quiet count",
+    "B": "keep all available rows",
+    "C": "keep all available rows",
+    "M": "keep all available rows",
+    "X": "keep all available rows"
+  },
+  "counts_before_sampling": {
+    "B": 14816,
+    "C": 2264,
+    "M": 921,
+    "X": 42,
+    "quiet": 795227
+  },
+  "counts_after_sampling": {
+    "B": 14816,
+    "C": 2264,
+    "M": 921,
+    "X": 42,
+    "quiet": 18043
+  },
+  "random_seed": 42,
+  "source_note": "Built from the exported row-aligned LightGBM test artifacts in analysis_artifacts/lightgbm_best_run."
+}
